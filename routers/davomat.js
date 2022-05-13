@@ -1,0 +1,10 @@
+const router = require('express').Router()
+const Davomat = require('../controllers/davomat')
+router.route("/davomat")
+      .get(Davomat.get)
+      .post(Davomat.post)
+      .put(Davomat.put)
+      .delete(Davomat.delete)
+router.route("/davomat/:id")
+      .get(Davomat.get)
+module.exports = router

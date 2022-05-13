@@ -1,0 +1,51 @@
+role{
+1 - superadmin
+2 - admin
+3 - buxgalter
+4 - o'qituvchi
+5 - o'quvchi
+}
+/login - {
+   login - qilish uchun
+}
+/join_user - {
+    post - user qo'shish uchun
+    get - userlarni ko'rish uchun
+    put - userni edit qilish uchun
+    delete - user o'chirish
+}
+/directions - {
+  post - yangi yo'nalish qo'shadi
+  get - yo'nalishlarni ko'rish
+  put - yo'nalish nomi o'zgaritirsh
+  delete - ma'lum bir yo'nalishni ochirish
+}
+/teachers - {
+   post - yangi o'qituvchi qo'shadi
+   get - o'qituvchilar ro'yhati
+   put - o'qituvchi ma'lumotlarini o'zgaritirish
+   delete - ma'lum bir teacherni ochirish
+}
+/guruh - {
+    get - mavjud guruhlarni ko'rish
+    post - yangi guruh ochish
+    put - guruhni update qilish , achtive ga 1 yuboriladi
+    delete - o'chirish
+}
+/davomat - {
+    get - davomatlar korish
+    post - davomat yaratiladi
+    put - o'quvchi qatnashishi yoki baho nishi , participate ga 1 yuboriladi
+    delete - id orqali davomatni o'chirish
+}
+/paid - {
+    get - tolovlarni korish,
+    post - tolov kritish
+    put oz'gartirish
+}
+/tolov_tizimlari - {
+  get
+  post
+  put
+  delete
+}
